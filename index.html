@@ -9,56 +9,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid text-center py-5 border w-75 mt-5 shadow-lg p-3 mb-5 bg-body rounded">
-    <h1 class="text-primary my-5">Registration Form</h1>
+    <div class="container-fluid text-center py-5 bg-warning">
+    <h1 class="my-5">Admission Registration Form</h1>
     <div class="row">
     <div class="col-md-12">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
-            <input type="text" id="fname"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+       <input type="text" placeholder="First Name" name="" id="fname">
     </div>
     <div class="col-md-12 my-2">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Last Name</span>
-            <input type="text" id="lname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+     <input type="text"  name="" id="lname" placeholder="Last Name">
     </div>
     <div class="col-md-12">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Last Qualification</span>
-            <input type="text" id="lastqual"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+        <input type="text" name="" id="lastqual" placeholder="Last Qualification">
     </div>
     <div class="col-md-12 my-2">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Course</span>
-            <input type="text" id="course"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+        <input type="text" name="" id="course" placeholder="Course">
     </div>
     <div class="col-md-12">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Contact</span>
-            <input type="number" id="contact" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+        <input type="text" name="" id="contact" placeholder="Contact">
     </div>
     <div class="col-md-12 my-2">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">CNIC</span>
-            <input type="number" id="cnic"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+        <input type="text" name="" id="cnic" placeholder="CNIC">
     </div>
     <div class="col-md-12">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
-            <input type="email" id="email"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+        <input type="text" name="" id="email" placeholder="Email">
     </div>
     <div class="col-md-12 my-2">
-        <div class="input-group input-group-sm mb-3 w-100 mx-auto">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
-            <input type="password" id="password"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
+        <input type="text" id="password" placeholder="Password">
     </div>
     </div>
     <button type="button" onclick="submitbutton()" class="btn btn-outline-success mt-3">Submit</button>
@@ -67,8 +43,6 @@
         <ol id="parent"></ol>
     </div>
 </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="app.js"></script>
 </body>

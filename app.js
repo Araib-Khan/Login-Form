@@ -1,24 +1,22 @@
+
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
 import { getDatabase,ref,set,onChildAdded } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCmutZMzsw-zoRa4s00yybph7lSLRYwG2E",
-  authDomain: "registration-form-d6c41.firebaseapp.com",
-  projectId: "registration-form-d6c41",
-  storageBucket: "registration-form-d6c41.appspot.com",
-  messagingSenderId: "122484437844",
-  appId: "1:122484437844:web:5366748f2531707d208ec1"
+  apiKey: "AIzaSyBU6xeMSp89J8bTvpA1CfHhFldBvPdMkQ0",
+  authDomain: "login-form-17c93.firebaseapp.com",
+  projectId: "login-form-17c93",
+  storageBucket: "login-form-17c93.appspot.com",
+  messagingSenderId: "884200943429",
+  appId: "1:884200943429:web:ee28a91327ee6b42d0d82c",
+  measurementId: "G-PFCY3LE1KE"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
+const analytics = getAnalytics(app);
 const database = getDatabase();
-
 var fname = document.getElementById('fname');
 var lname = document.getElementById('lname');
 var lastqual = document.getElementById('lastqual');
@@ -27,21 +25,18 @@ var contact = document.getElementById('contact');
 var cnic = document.getElementById('cnic');
 var email = document.getElementById('email');
 var password = document.getElementById('password');
-
 var display = document.getElementById('parent');
-
 window.submitbutton = function(){
 var stinfo = {
-firstname : fname.value,
-lastname : lname.value,
-lastqualification : lastqual.value,
-crs : course.value,
-cntct : contact.value,
-nicno : cnic.value,
-stmail : email.value,
-pass : password.value
+    firstname : fname.value,
+    lastname : lname.value,
+    lastqualification : lastqual.value,
+    crs : course.value,
+    cntct : contact.value,
+    nicno : cnic.value,
+    stmail : email.value,
+    pass : password.value
 }
-
 stinfo.id = Math.random().toString().slice(2);
 if(stinfo.firstname=="" || stinfo.lastqualification=="" || stinfo.crs=="" || stinfo.nicno=="" || stinfo.stmail=="" || stinfo.pass==""){
 window.alert("Please Fill the Form");
@@ -51,8 +46,6 @@ else{
 set(reference,stinfo);
  console.log(stinfo);
 }
-
-
 }
 
 function getData(){
